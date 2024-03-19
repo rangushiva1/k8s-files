@@ -15,5 +15,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:latest
+      - image: public.ecr.aws/m2x6m9z0/demo-app-shiva:latest
         name: rollingupdate
