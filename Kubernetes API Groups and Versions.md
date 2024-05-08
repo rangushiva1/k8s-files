@@ -1,7 +1,7 @@
-Core and Named Groups for the Cluster Management
+**# Core and Named Groups for the Cluster Management
+**
 
-
-Introduction:
+**Introduction:**
 Kubernetes organizes its API into different groups based on their purpose. These groups, similar to sections in a library, hold various resources related to specific themes.
 
 The two main types of groups are the core group and named groups. The core group contains fundamental resources essential to the platform’s operation, such as Pods, Nodes, Namespaces, and Services.
@@ -17,7 +17,9 @@ Table of Contents:
 . Why there are named groups and core groups
 · Named Groups
 . Core group
-Why there are named groups and core groups:
+
+**Why there are named groups and core groups:**
+
 Kubernetes doesn’t put all its eggs in one basket. Instead, it smartly categorizes its API into different groups based on their purpose. Think of these groups like sections in a library, each holding books (or, in this case, APIs) related to a specific theme.
 
 The named groups and core groups in Kubernetes serve distinct purposes, rooted in the platform’s historical and organizational principles.
@@ -29,7 +31,8 @@ On the other hand, the named API groups, or namespaces, were introduced to categ
 The core group API endpoint is located at /api/v1. On the other hand, the named groups API endpoint is /apis/$GROUP_NAME/$VERSION.
 
 
-Named Groups:
+**Named Groups:**
+
 The named group API in Kubernetes is more organized and groups resources thematically.
 
 It includes groups for apps, extensions, networking, storage, authentication, authorization certificates, and more.
@@ -46,7 +49,8 @@ $VERSION: the API version of your custom resource.
 The named group is identified by the $GROUP_NAME included in the apiVersion field.
 
 apiVersion: $GROUP_NAME/$VERSION
-Resources:
+
+**Resources:**
 
 The resources in named groups depend on the specific named group that is being used. The following are some examples of named groups in Kubernetes and their associated resources:
 
@@ -55,7 +59,10 @@ extensions: Ingresses, NetworkPolicies, and PodSecurityPolicies.
 batch: CronJobs and Jobs.
 storage.k8s.io: StorageClasses and VolumeAttachments.
 policy: PodDisruptionBudgets.
-Core group:
+
+**Core group:**
+
+
 The core group is where all core functionality exists. Such as namespaces, PODs, replication controllers, events, endpoints, nodes, bindings, Persistent volumes, persistent volume claims, configmaps, secrets, services, etc.
 
 
