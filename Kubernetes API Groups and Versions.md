@@ -1,5 +1,4 @@
-** Core and Named Groups for the Cluster Management
-**
+**#Core and Named Groups for the Cluster Management**
 
 **Introduction:**
 Kubernetes organizes its API into different groups based on their purpose. These groups, similar to sections in a library, hold various resources related to specific themes.
