@@ -1,4 +1,4 @@
-**# Core and Named Groups for the Cluster Management
+** Core and Named Groups for the Cluster Management
 **
 
 **Introduction:**
@@ -30,6 +30,7 @@ On the other hand, the named API groups, or namespaces, were introduced to categ
 
 The core group API endpoint is located at /api/v1. On the other hand, the named groups API endpoint is /apis/$GROUP_NAME/$VERSION.
 
+![Model](https://github.com/rangushiva1/k8s-files/blob/main/k8s.png?raw=true)
 
 **Named Groups:**
 
@@ -39,6 +40,7 @@ It includes groups for apps, extensions, networking, storage, authentication, au
 
 Going forward, all newer features will be made available to these named groups. The named groups allow for the extension of Kubernetes functionality by introducing custom resources and controllers tailored to specific areas, such as networking or storage.
 
+![Model](https://github.com/rangushiva1/k8s-files/blob/main/k8s2.png?raw=true)
 
 The named groups API is located at /apis/$GROUP_NAME/$VERSION.
 
@@ -65,9 +67,11 @@ policy: PodDisruptionBudgets.
 
 The core group is where all core functionality exists. Such as namespaces, PODs, replication controllers, events, endpoints, nodes, bindings, Persistent volumes, persistent volume claims, configmaps, secrets, services, etc.
 
+![Model](https://github.com/rangushiva1/k8s-files/blob/main/k8s3.png?raw=true)
 
 The core group’s API endpoint is located at /api/v1.
 
+![Model](https://github.com/rangushiva1/k8s-files/blob/main/k8s4.png?raw=true)
 
 core REST path
 /api/v1
@@ -75,6 +79,7 @@ apiVersion field in the manifest file:
 
 The core group is not specified as part of the apiVersion field.
 
+![Model](https://github.com/rangushiva1/k8s-files/blob/main/k8s5.png?raw=true)
 
 Core apiVersion
 apiVersion: v1
